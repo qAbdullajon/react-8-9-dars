@@ -1,0 +1,234 @@
+.header_shodow {
+  box-shadow: 0 6px 6px #444141;
+}
+
+.artistHero {
+  .artistHero_img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .artist_hero_img {
+      width: 100%;
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .avatar_hero_box {
+      position: absolute;
+      bottom: -25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.artist_discover {
+  .discover_fil {
+    width: 100%;
+    padding: 10px 30px 0 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+
+    .filter_item {
+      width: 100%;
+      padding: 19px 21px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: #858584;
+      transition: all 0.3s;
+
+      span {
+        background-color: #3b3b3b;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.2px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin-left: 12px;
+      }
+
+      &:hover {
+        color: #fff;
+        border-color: #858584;
+
+        span {
+          background-color: #858584;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .artistHero {
+    .artistHero_img {
+      .avatar_hero_box {
+        padding: 0 72px;
+        justify-content: start;
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .artistHero {
+    .artistHero_img {
+      .avatar_hero_box {
+        padding: 0 110px;
+      }
+    }
+  }
+}
+
+
+.animatic {
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid #3B3B3B;
+
+  .animatic_title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39.2px;
+  }
+
+  .animatic_box {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+
+  }
+
+  .animatic_btns {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      color: #fff;
+      background-color: #A259FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 20px;
+      padding: 19px 0;
+      width: 100%;
+      border: 2px solid #A259FF;
+    }
+
+    .animatic_btns_follow {
+      background-color: transparent;
+    }
+  }
+
+  .animatic_info {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto;
+
+    &_desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto;
+
+      span {
+        color: #858584;
+      }
+    }
+
+    &_links {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto;
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #858584;
+      }
+
+      &_box {
+        display: grid;
+        grid-template-columns: repeat(5, 24px);
+        gap: 10px;
+      }
+    }
+  }
+
+  .animatic_info_kbox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+
+  .animatic_info_k {
+
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 35.2px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .animatic {
+    padding: 40px 72px;
+
+    .animatic_btns {
+      width: 350px;
+      grid-template-columns: auto auto;
+    }
+
+    .animatic_info {
+      max-width: 480px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .animatic {
+    padding: 30px 110px;
+
+    h1 {
+      font-size: 51px;
+      line-height: 56.1px;
+    }
+
+    .animatic_box {
+      grid-template-columns: auto auto;
+      align-items: start;
+      justify-content: space-between;
+
+      .animatic_btns {
+        order: 2;
+      }
+    }
+  }
+}
